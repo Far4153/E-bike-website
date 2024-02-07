@@ -75,4 +75,121 @@ body, html{
 
 .right-column{
     background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-sec{
+    color: white;
+    width: 270px;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 100px;
+    z-index: 3;
+}
+
+.hero-sec h1{
+    font-size: 3em;
+}
+.hero-sec p{
+    font-size: 15px;
+    font-weight: bold;
+}
+#sub-heading{
+    font-size: 21px;
+    color: #FF1F1F;
+}
+
+/* #heading-1{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    /* display: inline; */
+
+
+.hero-sec #heading-1{
+    padding: 0;
+    margin: 0;
+    color: #877575;
+    font-size: 12px;
+}
+
+.btns{
+    display: flex;
+    margin-top: 30px;
+}
+
+.btns button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    padding: 10px 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Margin between buttons */
+    cursor: pointer; /* Cursor style */
+    
+    /* display: flex; */
+}
+
+#btn-1{
+    background-color: #FF3465;
+}
+#btn-2{
+    background-color: transparent;
+}
+
+.small-bike{
+    z-index: 4;
+    margin-left: 0;
+    margin-right: 40px;
+    margin-top: 50px;
+
+}
+
+.bottom-sec{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sponsers img{
+    width: 90px;
+    height: 40px;
+    margin-top: 250px;
+    z-index: 4;
+    margin-left: 30px;
+}
+
+.bigbike img{
+    width: 120%;
+    height: 600px;
+    margin-top: 40px;
+}
+
+
+.ratings svg{
+    margin: 200px 30px;
+    padding: 20px ;
+    background-color: #8E2841;
+}
+
+.ratings  p{
+    color: white;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.rectangle{
+    padding: 0;
+    margin: 0;
 }
