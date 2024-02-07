@@ -15,13 +15,13 @@ function Left_part(){
 
         <div className="bottom-sec">
             <div className="small-bike" >
-                <img src="/Sbike.png" />
+                <img src="/bicycle2.png" />
             </div>
 
             <div className="sponsers">
-                <img src="t2.png" />
-                <img src="t3.png" />
-                <img src="t4.png" />
+                <img id="one" src="t2.png" />
+                <img id="two" src="t3.png" />
+                <img id="three" src="t4.png" />
                 
             </div>
         </div>
