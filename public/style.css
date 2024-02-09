@@ -3,6 +3,9 @@ body, html{
     margin: 0;
 }
 
+:root {
+  --speed: 0.3s; /* Define transition speed */
+}
 .main{
     position: relative;
     width: 100%;
@@ -41,9 +44,90 @@ body, html{
 
 .c-sec{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 10px;
     margin-left: 200px;
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 8px; /* Adjust margin as needed */
+}
+
+.c-sec li {
+    list-style: none;
+}
+
+.c-sec ul{
+    padding: 0;
+    margin: 0;
+
+}
+
+.c-sec h3{
+    margin: 20px;
+    margin-top: 0%;
+}
+
+.dropdown-menu{
+    background-color: #7B2037;
+    padding: 20px;
+    
+
+
+}
+
+.dropdown-menu::after {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px; /* Adjust arrow size */
+    border-style: solid;
+    border-color: transparent transparent #7B2037 transparent; /* Arrow color */
+  }
+
+.dropdownItem{
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+.dropdownItem p{
+    opacity: 0.5;
+    margin-left: 10px;
+    padding: 0;
+    margin: 0;
+    transition: var(--speed);
+}
+
+.dropdownItem a {
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.trigger{
+    margin: 65px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+.dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
 }
 
 .l-sec{
@@ -226,3 +310,12 @@ body, html{
 .container-2 p{
     font-size: 10px;
 }
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    color:#000000;
+}
+
