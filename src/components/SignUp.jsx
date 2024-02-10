@@ -1,25 +1,21 @@
 import React from "react";
-import "../styles/logIn.css"; 
+import "../styles/signUp.css";
 import { Link } from 'react-router-dom';
 import {ArrowBigLeft} from "lucide-react";
 
-
-
-function LogIn(){
-
-
+function SignUp(){
     return(
-        <div className="login-whole">
+        <div className="signup-whole">
             <div className="login-page">
                 <div className="back-button">
-                    <Link to="/">
-                    <button><ArrowBigLeft color="#ffffff" size="40"/></button>
-                    </Link>
-                </div>
+                        <Link to="/">
+                        <button><ArrowBigLeft color="#ffffff" size="40"/></button>
+                        </Link>
+                    </div>
             <div className="login-rectangle">
                 <div className="login-rectangle-info">
                     <h1>
-                    Don’t Have an Account?
+                    Already has an Account?
                     </h1>
                     <p>
                     To rejuvenate your soul!
@@ -27,19 +23,19 @@ function LogIn(){
                     To maintain a healty Lifestyle!
                     </p>
                     <div>
-                        <Link to="/signup">
-                        <button>SignUp</button>
+                        <Link to="/LogIN">
+                        <button>Log In</button>
                         </Link>
                     </div>
                 </div>
             </div>
 
             <div className="login-square">
-                <div className="login-square-info">
+                <div className="signup-square-info">
                     <h1>
-                        LOG IN
+                        SIGN UP
                     </h1>
-                    <div className="login-sub">
+                    <div className="signup-sub">
                     <label htmlFor="email">Email:</label>
                     <input type="email" id="email" name="email" required/>
                     <br/>
@@ -49,18 +45,22 @@ function LogIn(){
                     <input type="password" id="password" name="password" required/>
                     <br/>
                     <br/>
-                    <div  className="login-add">  
-                    <p>Forgot Password?</p>
-                    <button>LOG IN</button></div>
+                    <label htmlFor="email">Confirm password:</label>
+                    <input type="password" id="password" name="password" required/>
+                    <br/>
+                    <br/>
+                    <div  className="signup-add">  
+                    
+                    <button>SIGN UP</button></div>
                     </div>
                 </div>
 
             </div>
             
         </div>
+            
         </div>
     )
 }
 
-
-export default LogIn;
+export default SignUp;

@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import LogIn from "./LogIn.jsx";
+import SignUp from "./SignUp.jsx";
 
 function App(){
     return(
@@ -24,6 +25,11 @@ function App(){
                 <Route 
                     path="/LogIn" 
                     element={<LogIn />} 
+                />
+
+                <Route 
+                    path="/signup" 
+                    element={<SignUp />} 
                 />
             </Routes>
         </Router>

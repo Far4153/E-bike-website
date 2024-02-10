@@ -1,4 +1,4 @@
-body{
+.login-whole{
     background-image: url("/public/loginbg.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -6,6 +6,7 @@ body{
     /* width: 100%; */
     height: 100vh;
     color: white;
+    position: relative;
 }
 
 .login-page{
@@ -48,6 +49,12 @@ body{
     border-radius: 5px;
     font-weight: bold;
     font-size: medium;
+
+}
+
+.login-rectangle-info button:hover{
+ cursor: pointer;
+ background-color: #000000;
 }
 
 .login-square{
@@ -93,6 +100,7 @@ body{
     background-color: #333333;
     border: 0;
     margin-top: 10px;
+    color: white;
 }
 
 .login-sub{

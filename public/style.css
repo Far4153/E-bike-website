@@ -316,6 +316,10 @@ body, html{
     color: white;
 }
 .navbar a:hover{
-    color:#000000;
+    color:#FF3465;
+}
+
+.dropdownItem a:hover{
+    color:black;
 }
 
