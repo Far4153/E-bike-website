@@ -1,0 +1,212 @@
+.bikes-page{
+    display: grid;
+    grid-template-columns: 0.75fr 3fr;
+}
+
+.filters-sec{
+    background-color: #000000;
+    color: white;
+    height: auto;
+    position: relative;
+    padding-left: 50%;
+
+    
+}
+
+.filters-sub{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /* margin-top: 50px; */
+
+    
+}
+
+.filters-sub ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   
+}
+
+.filters-sub li{
+    list-style: none;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 300;
+    margin:0;
+    padding: 20px;    
+}
+
+.filters-sub ul img{
+   
+    margin-bottom: 0px;
+    
+    width: 20px;
+}
+
+.filters-sub h1 img{
+    padding-right: 15px;
+}
+
+.filters-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters-sub h1 {
+    padding-right: 15px;
+    margin-top: 40px;
+    
+}
+
+.filters-sub ul #hr{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.bikes-sec{
+    display: grid;
+    grid-template-rows: auto 3fr;
+}
+
+.bikes-Nav{
+    background-color: #8E2841;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.bikes-Nav h1{
+    /* padding: 20px; */
+    margin-left: 50px;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.Search-bar {
+    padding: 30px;
+    /* margin: 30px; */
+}
+.Search-bar input{
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0;
+    border-radius: 10px;
+    /* margin: 30px; */
+}
+
+::placeholder {
+    /* color: red; */
+    opacity: 1; /* Firefox */
+    padding: 20px;
+    
+    width: 100%;
+  }
+  .Search-bar {
+    position: relative; /* Set position to relative */
+}
+
+.search-icon {
+    position: absolute; /* Set position to absolute */
+    left: 50px; /* Adjust the left position to position the icon */
+    top: 50%; /* Vertically center the icon */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.search-input {
+    padding-left: 20px; /* Add padding to the left to make space for the icon */
+}
+
+
+
+
+.bikes-Grid{
+    background-color: #8E2841;
+
+    
+    
+}
+
+.bikes-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    margin: 50px;
+}
+.card img{
+
+    padding: 0;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.card {
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    border-radius: 20px;
+    height: 300px;
+    border: 1px ridge rgb(255, 255, 255);
+    
+}
+
+.card:hover
+{
+    border: 3px solid #ffffff;
+}
+
+.card p{
+    padding: 3px;
+    margin: 2px;
+    margin-left: 20px;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    /* flex: 1;  */
+}
+
+.card button{
+    background-color: #8E2841;
+    border: 0;
+}
+
+.price p{
+    margin-right: 100px;
+    color: rgb(60, 255, 0);
+
+}
+
+.price button{
+    margin-left: 20px;
+    color: white;
+}
+
+.price{
+    display: flex;
+}
+
+.buynow-btn button{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.buynow-btn button:hover{
+    color: #8E2841;
+    border:2px;
+}

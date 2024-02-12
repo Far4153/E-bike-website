@@ -10,6 +10,8 @@ import {
 
 import LogIn from "./LogIn.jsx";
 import SignUp from "./SignUp.jsx";
+import Bikes from "./Bikes.jsx";
+import AboutUs from "./AboutUs.jsx";
 
 function App(){
     return(
@@ -30,6 +32,16 @@ function App(){
                 <Route 
                     path="/signup" 
                     element={<SignUp />} 
+                />
+                
+                <Route 
+                    path="/Bikes" 
+                    element={<Bikes />} 
+                />
+
+                <Route 
+                    path="/AboutUs" 
+                    element={<AboutUs />} 
                 />
             </Routes>
         </Router>

@@ -36,9 +36,9 @@ function Navbar() {
         </div>
 
         <div className="r-sec">
-          <p><a href="#"> Bikes </a></p>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Services and Support</a></p>
+          <p><a href="/Bikes"> Bikes </a></p>
+          <p><a href="/AboutUs">About Us</a></p>
+          <p><a href="/Services">Services and Support</a></p>
         </div>
       </div>
     );
