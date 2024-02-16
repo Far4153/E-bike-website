@@ -1,0 +1,43 @@
+.cart-page{
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.cart-page .navbar{
+    background-color:#8E2841;
+    height: 50px;
+    margin: 0;
+}
+
+.cart-page .navbar {
+    background-color: #8E2841;
+    height: auto; /* Set height to auto */
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+  
+  .cart-page .navbar .container {
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+  
+  .cart-page .navbar .container .dropdown-menu {
+    position: absolute; /* Position dropdown absolutely */
+    top: 100%; /* Position dropdown below trigger */
+    left: 0; /* Align dropdown with trigger */
+    z-index: 999; /* Ensure dropdown overlays other elements */
+    display: none; /* Initially hide dropdown */
+  }
+  
+  .cart-page .navbar .container.active .dropdown-menu {
+    display: block; /* Show dropdown when active class is applied */
+  }
+
+  .cart-page h2{
+    margin:20px;
+  }
+
+.tables-class{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
