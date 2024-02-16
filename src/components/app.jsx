@@ -12,6 +12,9 @@ import LogIn from "./LogIn.jsx";
 import SignUp from "./SignUp.jsx";
 import Bikes from "./Bikes.jsx";
 import AboutUs from "./AboutUs.jsx";
+import Product_page from "./Product_page.jsx";
+import Cart from "./Cart.jsx";
+
 
 function App(){
     return(
@@ -40,9 +43,19 @@ function App(){
                 />
 
                 <Route 
-                    path="/AboutUs" 
+                    path="/About_Us" 
                     element={<AboutUs />} 
                 />
+                <Route 
+                    path="/Product_page" 
+                    element={<Product_page />} 
+                />
+                <Route 
+                    path="/Cart" 
+                    element={<Cart />} 
+                />
+
+
             </Routes>
         </Router>
         </>

@@ -215,7 +215,7 @@ body, html{
 }
 
 .btns button {
-    background-color: #007bff; /* Blue background color */
+     /* Blue background color */
     color: white; /* Text color */
     padding: 10px 10px; /* Padding */
     border: none; /* No border */

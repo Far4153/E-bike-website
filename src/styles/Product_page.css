@@ -1,0 +1,190 @@
+.product-whole{
+    padding: 0;
+    margin: 0;
+    color:white;
+    width: 100%;
+    height: 100vh;
+}
+
+.product-whole nav h1{
+    margin: 0;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.product-whole nav {
+    background: #8E2841;
+}
+
+.product-page{
+    display: grid;
+    grid-template-rows: 2fr auto;
+    width: 100%;
+    /* height: calc(100vh - 38px); */
+    background-color: rgb(58, 141, 214);
+    
+}
+
+
+.product-page-top{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-rows: 1.5frfr 1fr;
+    margin: 10px;
+}
+
+.sub-images{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 5px;
+}
+
+/* .sub-images > div:nth-child(1) {
+    background-color: #ff0000;
+} */
+.sub-images div img {
+    margin: 0;
+    width: 100%; /* or any specific width you want */
+    max-width: 100%;
+    height: 100%;
+     /* Ensure images don't exceed their container width */
+}
+
+
+.text-grid{
+    margin: 20px;
+}
+
+.text-grid h3{
+    font-size: 2em ;
+    font-weight: 50;
+}
+.text-grid #price{
+    font-size: 2em ;
+    font-weight: 50;
+}
+
+.colors p{
+    color: grey;
+    font-size: large;
+}
+
+
+
+.text-grid button{
+    background-color: #FF3465;
+    color: white; /* Text color */
+    padding: 10px 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 50px; /* Margin between buttons */
+    margin-top: 30px; /* Margin between buttons */
+    cursor: pointer;
+}
+
+.product-page-bottom{
+    background-color: black;
+}
+ 
+
+#desc{
+    margin-left: 25%;
+
+}
+
+#desc:hover{
+    cursor: pointer;
+}
+#reviews:hover{
+    cursor: pointer;
+}
+
+#reviews{
+    margin-right: 25%;
+
+}
+
+.additional{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hrs {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items along the main axis */
+    width: 50%;
+}
+
+
+
+#hr1, #hr2 {
+    width: 50%; /* Adjust width as needed */
+    margin: 0; /* Remove any default margins */
+}
+
+.main-img{
+    height: auto;
+}
+
+.main-img img{
+    width: 100%;
+    height:340px;
+}
+
+.review{
+    margin: 30px ;
+
+
+}
+
+.review .imageandname{
+    display: flex;
+   
+    
+}
+.review #text{
+    display: block;
+}
+
+#profile{
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+    
+}
+
+.review .imageandname h5{
+    padding: 0;
+    margin: 0;
+}
+
+.review .nameandrating{
+    margin-left: 10px;
+}
+
+.review #text{
+    margin-top: 5px;
+    
+}
+
+.desc-info h3{
+    color: #FF3465;
+
+}
+
+
+
+.reviewtab h3{
+margin-left: 45%;
+}
+
+.descriptiontab h3{
+margin-left: 45%;
+}
+

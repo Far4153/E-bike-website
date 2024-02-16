@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Bikes.css";
 import Card from "./Card";
 import {Search} from "lucide-react";
+import { Link } from 'react-router-dom';
 
 function Bikes(){
     return (
@@ -35,6 +36,7 @@ function Bikes(){
                 </div>
                 <div className="bikes-Grid">
                     <div className="bikes-content">
+                    <Link to="/Product_page"><Card /></Link>
                     <Card />
                     <Card />
                     <Card />

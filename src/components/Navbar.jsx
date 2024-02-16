@@ -3,6 +3,8 @@ import DropdownItem from "./DropdownItem";
 import { ShoppingCart } from "lucide-react";
 import { ShoppingBag } from "lucide-react";
 import { LogIn } from "lucide-react";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -26,7 +28,7 @@ function Navbar() {
           <div className="container">
             <div className={`dropdown-menu ${open? 'active':'inactive'}`}>
               <h3>Hi, There <br/> <span>Welcome</span></h3>
-              <ul><DropdownItem img={<LogIn />} href={"/LogIn"} text={"Log-In"}/></ul>
+              <ul><Link to="/LogIn"><DropdownItem img={<LogIn />} text={"Log-In"}/></Link></ul>
               <ul><DropdownItem img={<ShoppingCart />} text={"Cart"}/></ul>
               <ul><DropdownItem img={<ShoppingBag />} text={"Orders"}/></ul>
               {/* <ul><DropdownItem img={<ShoppingCart />} text={"Sign-up"}/></ul> */}
@@ -36,9 +38,17 @@ function Navbar() {
         </div>
 
         <div className="r-sec">
-          <p><a href="/Bikes"> Bikes </a></p>
-          <p><a href="/AboutUs">About Us</a></p>
-          <p><a href="/Services">Services and Support</a></p>
+        <Link to="/Bikes">
+        <p>Bikes</p>
+        </Link>
+        <Link to="/About_Us">
+        <p>About Us</p>
+        </Link>
+        <Link to="/Services_and_support">
+        <p>Services and Support</p>
+        </Link>
+          
+          
         </div>
       </div>
     );
