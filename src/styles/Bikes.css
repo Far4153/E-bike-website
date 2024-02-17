@@ -1,14 +1,20 @@
 .bikes-page{
-    display: grid;
-    grid-template-columns: 0.75fr 3fr;
+    /* display: grid;
+    grid-template-columns: 0.75fr 3fr; */
+    display: flex;
 }
 
 .filters-sec{
     background-color: #8E2841;
     color: white;
     height: auto;
-    position: relative;
-    padding-left: 50%;
+    /* position: relative; */
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
 
     
 }
@@ -72,8 +78,12 @@
 }
 
 .bikes-sec{
-    display: grid;
+    display: grid;  
+    grid-template-columns: 1fr;
     grid-template-rows: auto 3fr;
+    margin-left:250px;
+    flex: 1;
+ 
 }
 
 .bikes-Nav{

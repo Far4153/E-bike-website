@@ -3,6 +3,8 @@ import "../styles/Bikes.css";
 import Card from "./Card";
 import {Search} from "lucide-react";
 import { Link } from 'react-router-dom';
+import products from "../data/products";
+
 
 function Bikes(){
     return (
@@ -36,14 +38,7 @@ function Bikes(){
                 </div>
                 <div className="bikes-Grid">
                     <div className="bikes-content">
-                    <Link to="/Product_page"><Card /></Link>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {products.map(product => (<Link key={product.id} to={`/Product_page/${product.id}`}><Card name={product.name} price={product.price} /></Link>))}
                     </div>
 
                 </div>

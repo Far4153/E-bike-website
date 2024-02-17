@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+
+import React, { useState} from "react";
 import { Link } from 'react-router-dom';
 import Review from "./Review";
+
 
 
 import "../styles/Product_page.css";
@@ -8,12 +10,15 @@ import "../styles/Product_page.css";
 
 
 function Product_page(){
+    
 
     const [activeTab, setActiveTab] = useState("description");
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
       };
+   
+
 
     return(
         <div className="product-whole">
