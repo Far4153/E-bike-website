@@ -38,7 +38,7 @@ function Bikes(){
                 </div>
                 <div className="bikes-Grid">
                     <div className="bikes-content">
-                    {products.map(product => (<Link key={product.id} to={`/Product_page/${product.id}`}><Card name={product.name} price={product.price} /></Link>))}
+                    {products.map(product => (<Link key={product.id} to={`/Product_page/${product.id}`}><Card name={product.name} price={product.price} image={`${process.env.PUBLIC_URL}/${product.image}`} /></Link>))}
                     </div>
 
                 </div>

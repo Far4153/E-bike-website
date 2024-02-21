@@ -1,7 +1,10 @@
 
 import React, { useState} from "react";
 import { Link } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 import Review from "./Review";
+import products from "../data/products";
+
 
 
 
@@ -10,6 +13,11 @@ import "../styles/Product_page.css";
 
 
 function Product_page(){
+
+    let {ProductId}=useParams();  //  if i want to render the url's id i need to use this hook
+    // this  stores id of the product we have given as a path
+
+    let product=products.find((p)=>p.id==ProductId)
     
 
     const [activeTab, setActiveTab] = useState("description");
@@ -27,7 +35,7 @@ function Product_page(){
                 <div className="product-page-top">
                     <div className="image-grid">
                         <div className="main-img">
-                            <img src="/mainimg.png"></img>
+                            <img src={`${process.env.PUBLIC_URL}/${product.image}`}></img>
                             
                         </div>
                         <div className="sub-images">
@@ -44,9 +52,9 @@ function Product_page(){
                         </div>
                     </div>
                     <div className="text-grid">
-                        <h3>Lifelong Cycle MTB Black Steel Mountain Bike 26T-LLBC2604</h3>
+                        <h3>{product.name}</h3>
                         <img src="/rating.png" />
-                        <p id="price">$2200</p>
+                        <p id="price">{product.price}</p>
                        
                         <div className="colors">
                             <p>Available colors</p>

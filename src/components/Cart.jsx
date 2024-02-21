@@ -27,7 +27,7 @@ function Cart(){
       
           
             <tr key={products[0].id}>
-              <td>{products[0].img}</td>
+              <td><img src={`${process.env.PUBLIC_URL}/${products[0].image}`}/></td>
               <td>{products[0].name}</td>
               <td>{products[0].price}</td>
             </tr>

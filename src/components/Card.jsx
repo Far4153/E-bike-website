@@ -12,7 +12,7 @@ function Card(props){
 
     return (
         <div className="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXnunor4OisUSzbtxTi7hSfSHsj4-0vGWlk7Gazt5ZPkVhS4Y3QDZFUbBpYcswxxmwp0&usqp=CAU"/>
+            <img src={props.image}/>
             <br></br>
             <p>{props.name}</p>
             <br></br>

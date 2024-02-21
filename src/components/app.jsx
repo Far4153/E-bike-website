@@ -47,7 +47,7 @@ function App(){
                     element={<AboutUs />} 
                 />
                 <Route 
-                    path="/Product_page" 
+                    path="/Product_page/:ProductId" 
                     element={<Product_page />} 
                 />
                 <Route 
