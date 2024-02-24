@@ -7,7 +7,7 @@ import Left_part from "./Left_part";
 function Mainbody(){
     return(
         <div className="main">
-            <Navbar />
+            <Navbar showCSection={true} />
             <Left_part />
             <Right_part />
         </div>

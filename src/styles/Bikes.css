@@ -81,7 +81,7 @@
     display: grid;  
     grid-template-columns: 1fr;
     grid-template-rows: auto 3fr;
-    margin-left:250px;
+    margin-left:270px;
     flex: 1;
  
 }
@@ -228,3 +228,24 @@
     text-decoration: none;
 }
 
+.bikes-sec .navbar{
+    position: static;
+    background-color: #8e2841;
+    
+}
+.bikes-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inherited-nav {
+    margin-top: -50px;
+  }
+  .bikes-Nav {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+  }
+
+  

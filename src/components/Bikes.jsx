@@ -4,10 +4,12 @@ import Card from "./Card";
 import {Search} from "lucide-react";
 import { Link } from 'react-router-dom';
 import products from "../data/products";
+import Navbar from "./Navbar";
 
 
 function Bikes(){
     return (
+        <>
         <div className="bikes-page">
             <div className="filters-sec">
                 <div className="filters-sub">
@@ -25,6 +27,7 @@ function Bikes(){
                 </div>
             </div>
             <div className="bikes-sec">
+                <div className="inherited-nav"><Navbar showCSection={false} /></div>
                 <div className="bikes-Nav">
                     <h1>Bikes</h1>
                     <div className="Search-bar">
@@ -44,6 +47,7 @@ function Bikes(){
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

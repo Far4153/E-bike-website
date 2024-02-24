@@ -1,9 +1,11 @@
 
 import React, { useState} from "react";
-import { Link } from 'react-router-dom';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from 'react-router-dom'; 
+
 import Review from "./Review";
 import products from "../data/products";
+
+import Navbar from "./Navbar";
 
 
 
@@ -12,12 +14,20 @@ import "../styles/Product_page.css";
 
 
 
+
 function Product_page(){
+
+
 
     let {ProductId}=useParams();  //  if i want to render the url's id i need to use this hook
     // this  stores id of the product we have given as a path
 
     let product=products.find((p)=>p.id==ProductId)
+    
+    // const [cart, setCart] = useState([]);
+  
+
+  
     
 
     const [activeTab, setActiveTab] = useState("description");
@@ -30,7 +40,7 @@ function Product_page(){
 
     return(
         <div className="product-whole">
-            <nav><h1>COWBOX</h1></nav>
+            <div className="inherited-nav"><Navbar showCSection={false} /></div>
             <div className="product-page">
                 <div className="product-page-top">
                     <div className="image-grid">
@@ -62,7 +72,7 @@ function Product_page(){
                         </div>
                         <br />
                         <p id="left">only 1 left - make it yours</p>
-                        <Link to="/Cart"><button id="add-btn">Add to cart</button></Link>
+                        <button id="add-btn" >Add to cart</button>
                         <button id="Buy now" >Buy now</button>
 
 
@@ -104,5 +114,7 @@ function Product_page(){
         </div>
     )
 }
+
+
 
 export default Product_page;
