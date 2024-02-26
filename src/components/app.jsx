@@ -1,6 +1,6 @@
 import React from "react";
 
-import Mainbody from "./Mainbody";
+import Mainbody from "./Mainbody.jsx";
 import {
     BrowserRouter as Router,
     Routes,
@@ -17,6 +17,8 @@ import Cart from "./Cart.jsx";
 
 
 function App(){
+
+    
     return(
         <>
         <Router>

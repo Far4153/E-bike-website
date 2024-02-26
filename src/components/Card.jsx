@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; 
 import "../styles/Bikes.css";
 import {Heart} from "lucide-react";
 
@@ -6,23 +6,25 @@ import {Heart} from "lucide-react";
 
 
 
-function Card(props){
+const Card=({item,handleClick})=>{
+    const {name,price,image}=item;
+    const [isHovered, setIsHovered] = useState(false); 
 
-    const [isHovered, setIsHovered] = React.useState(false);
+
 
     return (
         <div className="card">
-            <img src={props.image}/>
+            <img src={image}/>
             <br></br>
-            <p>{props.name}</p>
+            <p>{name}</p>
             <br></br>
             <div className="price">
-            <p>{props.price}</p>
+            <p>{price}</p>
             
             <button onMouseEnter={() => setIsHovered(true)} onMouseLeave={()=> setIsHovered(false)}><Heart color="#ffffff" fill={isHovered ?"#ff0000": "transparent"} /></button>
             </div>
             <div className="buynow-btn">
-            <button >Buy now</button>
+            <button onClick={()=>handleClick(item)}>Add to Cart</button>
             </div>
             
         </div>

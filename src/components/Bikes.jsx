@@ -5,9 +5,14 @@ import {Search} from "lucide-react";
 import { Link } from 'react-router-dom';
 import products from "../data/products";
 import Navbar from "./Navbar";
+import { ShoppingCart } from "lucide-react";
 
 
 function Bikes(){
+    
+    const handleClick =(item)=>{
+        console.log(item);
+    }
     return (
         <>
         <div className="bikes-page">
@@ -30,10 +35,13 @@ function Bikes(){
                 <div className="inherited-nav"><Navbar showCSection={false} /></div>
                 <div className="bikes-Nav">
                     <h1>Bikes</h1>
+                    
+                    <div className="left-sec">
+                    <ul><Link to="/Cart"><ShoppingCart color="#ffffff" size={35}/></Link></ul>
                     <div className="Search-bar">
                     <div className="search-icon"><Search color="#000000" /></div>
-                        <input 
-                        placeholder=" Search for Bikess" className="search-input" ></input>
+                    <input placeholder=" Search for Bikess" className="search-input" ></input>
+                    </div>
                         
 
                     </div>
@@ -41,7 +49,7 @@ function Bikes(){
                 </div>
                 <div className="bikes-Grid">
                     <div className="bikes-content">
-                    {products.map(product => (<Link key={product.id} to={`/Product_page/${product.id}`}><Card name={product.name} price={product.price} image={`${process.env.PUBLIC_URL}/${product.image}`} /></Link>))}
+                    {products.map(item => (<Link key={item.id} to={`/Product_page/${item.id}`}><Card item={item} key={item.id} handleClick={handleClick} /></Link>))}
                     </div>
 
                 </div>
