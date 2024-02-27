@@ -39,6 +39,7 @@ body, html{
 }
 .r-sec p{
     margin-left: 22px;
+    position:relative;
 
 }
 
@@ -324,3 +325,16 @@ body, html{
     color:black;
 }
 
+.cartsec span{
+    position: absolute;
+    top: 0px;
+    right: 240px;
+    width: 10px;
+    background-color: #FF3465;
+    border-radius: 50%;
+    padding:2px ;
+    padding-left: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+
+}

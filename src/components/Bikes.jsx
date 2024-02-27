@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "../styles/Bikes.css";
 import Card from "./Card";
 import {Search} from "lucide-react";
@@ -10,9 +10,25 @@ import { ShoppingCart } from "lucide-react";
 
 function Bikes(){
     
-    const handleClick =(item)=>{
-        console.log(item);
+    
+    // Define Cart and size states directly in the Bikes component
+    const [Cart, setCart] = useState([]);
+    const [Csize, setSize] = useState(0);
+
+    useEffect(()=> {
+        setSize(Cart.length);
+        console.log("upadtedsize", Csize);
+        
+    },[Cart]);
+    
+    const handleClick = (item) => {
+        // Update Cart state by adding the new item
+        setCart([...Cart, item]);
+        console.log("upadtedsize", Csize);
     }
+
+
+
     return (
         <>
         <div className="bikes-page">
@@ -37,7 +53,8 @@ function Bikes(){
                     <h1>Bikes</h1>
                     
                     <div className="left-sec">
-                    <ul><Link to="/Cart"><ShoppingCart color="#ffffff" size={35}/></Link></ul>
+                    <ul><Link to="/Cart" className="bikescart"><ShoppingCart color="#ffffff" size={35}/>
+                    <span>{Csize}</span></Link></ul>
                     <div className="Search-bar">
                     <div className="search-icon"><Search color="#000000" /></div>
                     <input placeholder=" Search for Bikess" className="search-input" ></input>
