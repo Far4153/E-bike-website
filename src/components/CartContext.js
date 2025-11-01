@@ -13,8 +13,13 @@ export const CartProvider = ({ children }) => {
     setCart([...cart, item]);
   };
 
+  const clearCart = () => setCart([]);
+
+  const cartSize = cart.length;
+  console.log(cartSize);
+
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );
