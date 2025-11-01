@@ -7,7 +7,6 @@ import products from "../data/products";
 import Navbar from "./Navbar";
 import { ShoppingCart } from "lucide-react";
 
-
 function Bikes(){
     
     
@@ -15,20 +14,23 @@ function Bikes(){
     const [Cart, setCart] = useState([]);
     const [Csize, setSize] = useState(0);
 
-    useEffect(()=> {
+    useEffect(() => {
         setSize(Cart.length);
-        console.log("upadtedsize", Csize);
-        
-    },[Cart]);
+    }, [Cart]);
     
     const handleClick = (item) => {
+        // Check if the item is already present in the cart
+        const isPresent = Cart.some((cartItem) => cartItem.id === item.id);
+      
+        if (isPresent) {
+            return;
+        }
+    
         // Update Cart state by adding the new item
         setCart([...Cart, item]);
-        console.log("upadtedsize", Csize);
+        
     }
-
-
-
+    console.log(Csize)
     return (
         <>
         <div className="bikes-page">
