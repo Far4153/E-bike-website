@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/E-bike-website/static/css/main.228c7708.css",
-    "main.js": "/E-bike-website/static/js/main.f00b5421.js",
+    "main.js": "/E-bike-website/static/js/main.d6ad3848.js",
     "static/media/signupbg.png": "/E-bike-website/static/media/signupbg.245f62ce194d6293d3b8.png",
     "static/media/loginbg.png": "/E-bike-website/static/media/loginbg.a98c8b7f44820bb705fc.png",
     "index.html": "/E-bike-website/index.html",
     "main.228c7708.css.map": "/E-bike-website/static/css/main.228c7708.css.map",
-    "main.f00b5421.js.map": "/E-bike-website/static/js/main.f00b5421.js.map"
+    "main.d6ad3848.js.map": "/E-bike-website/static/js/main.d6ad3848.js.map"
   },
   "entrypoints": [
     "static/css/main.228c7708.css",
-    "static/js/main.f00b5421.js"
+    "static/js/main.d6ad3848.js"
   ]
 }
